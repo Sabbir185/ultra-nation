@@ -13,10 +13,10 @@ function App() {
 
   return (
     <div className="App">
-      <p>Total country : {countries.length}</p>
+      <h2>Total country : {countries.length}</h2>
       <ul>
         {
-          countries.map(country => <Country name={country.name}></Country>)
+          countries.map(country => <Country country={country}></Country>)
         }
       </ul>
       <header className="App-header">

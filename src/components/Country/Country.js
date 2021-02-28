@@ -1,10 +1,13 @@
 import React from 'react';
 
 const Country = (props) => {
-    const name = props.name;
+    const {name, flag, population, capital} = props.country;
     return (
-        <div>
-            <h2>This is {name}</h2>
+        <div style={{borderBottom:'1px solid gray'}}>
+            <h4>This is {name}</h4>
+            <img style={{height:'50px'}} src={flag} alt=""/>
+            <p>Population : {population}</p>
+            <p>Population : {capital}</p>
         </div>
     );
 };
