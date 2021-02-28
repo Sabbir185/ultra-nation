@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { useEffect, useState } from 'react';
 import Country from './components/Country/Country';
-import Cart from './components/Country/Cart/Cart';
+import Cart from './components/Cart/Cart';
 
 function App() {
   const [countries, setCountry] = useState([]);
